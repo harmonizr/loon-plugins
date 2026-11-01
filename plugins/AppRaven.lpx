@@ -6,7 +6,7 @@
 #!system = 
 #!system_version = 
 #!loon_version = 3.5.2(1005)
-#!homepage = https://loonlab.103516.xyz/Plugin/
+#!homepage = https://github.com/harmonizr/loon-plugins
 #!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/AppRaven.png
 #!date = 2026-10-02 12:00
 
@@ -14,7 +14,7 @@
 # https://github.com/Yu9191/Rewrite/blob/main/AppRaven.js
 
 [Script]
-response if ${url} ~= /^https:\/\/appraven\.net\/appraven\/graphql/i then script("https://loon.103516.xyz/Script/AppRaven/AppRaven.js") with tag="[AppRaven]会员Crack", requires_body=true
+response if ${url} ~= /^https:\/\/appraven\.net\/appraven\/graphql/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/loon.103516.xyz/Script/AppRaven/AppRaven.js") with tag="[AppRaven]会员Crack", requires_body=true
 
 [MitM]
 hostname = appraven.net

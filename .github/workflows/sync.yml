@@ -12,10 +12,29 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
+      # 1. 同步上游插件本体
       - run: python3 sync.py || true
+      # 2. 提取最新引用，镜像第三方脚本
       - run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python3 - <<'PY'
+          import re, glob, json, os
+          from urllib.parse import urlparse
+          refs = {}
+          for f in glob.glob('plugins/*.lpx'):
+              for line in open(f, encoding='utf-8', errors='replace'):
+                  if line.lstrip().startswith('#'):
+                      continue
+                  for m in re.finditer(r'https?://[^\s"\'`,()]+', line):
+                      refs.setdefault(m.group(0).rstrip('.,;'), set()).add(os.path.basename(f))
+          json.dump({u: sorted(v) for u, v in refs.items()}, open('/tmp/refs.json','w'), ensure_ascii=False)
+          print('refs:', len(refs))
+          PY
+      - run: python3 localize.py /tmp/refs.json || true
+      # 3. 把插件里的第三方链接改指本仓库
+      - run: python3 rewrite.py || true
+      - run: |
+          git config user.name "harmonizr"
+          git config user.email "298955003+harmonizr@users.noreply.github.com"
           git add -A
           git diff --cached --quiet || git commit -m "chore: sync $(date -u +%F)"
           git push

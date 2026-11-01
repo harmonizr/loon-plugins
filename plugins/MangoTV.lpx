@@ -6,7 +6,7 @@
 #!system = 
 #!system_version = 
 #!loon_version = 3.5.2(1005)
-#!homepage = https://loonlab.103516.xyz/Plugin/
+#!homepage = https://github.com/harmonizr/loon-plugins
 #!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/MangoTV.png
 #!date = 2026-10-02 12:00
 
@@ -71,7 +71,7 @@ request if ${url} ~= /^https?:\/\/mobileso\.bz\.mgtv\.com\/mobile\/recommend\/v\
 
 [Script]
 # 会员解锁
-request if ${url} ~= /^https?:\/\/mobile-stream\.api\.mgtv\.com\/v1\/video\/source/i then script("https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/mgtv_vip.js") with tag="[芒果TV]会员Crack", requires_body=false
+request if ${url} ~= /^https?:\/\/mobile-stream\.api\.mgtv\.com\/v1\/video\/source/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/ZenmoFeiShi__Qx/main/mgtv_vip.js") with tag="[芒果TV]会员Crack", requires_body=false
 
 # request if ${url} ~= /^https?:\/\/mobile-stream\.api\.mgtv\.com\/v1\/video\/source\?/i then script("https://raw.githubusercontent.com/WeiGiegie/666/main/mgtk.js") with tag="[芒果TV]会员Crack", requires_body=false
 

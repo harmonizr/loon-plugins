@@ -6,7 +6,7 @@
 #!system = 
 #!system_version = 
 #!loon_version = 3.5.2(1005)
-#!homepage = https://loonlab.103516.xyz/Plugin/
+#!homepage = https://github.com/harmonizr/loon-plugins
 #!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Reddit.png
 #!date = 2026-10-02 12:00
 
@@ -14,7 +14,7 @@
 # https://kelee.one/Tool/Loon/Lpx/Reddit_remove_ads.lpx
 
 [Rewrite]
-response if ${url} ~= /^https?:\/\/gql(-fed)?\.reddit\.com/i then response.json.jq("jq-path=https://kelee.one/Resource/JQLang/Reddit/Reddit_remove_ads.jq")
+response if ${url} ~= /^https?:\/\/gql(-fed)?\.reddit\.com/i then response.json.jq("jq-path=https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/kelee.one/Resource/JQLang/Reddit/Reddit_remove_ads.jq")
 
 [MitM]
 hostname = gql.reddit.com, gql-fed.reddit.com

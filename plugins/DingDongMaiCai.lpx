@@ -6,7 +6,7 @@
 #!system = 
 #!system_version = 
 #!loon_version = 3.5.2(1005)
-#!homepage = https://loonlab.103516.xyz/Plugin/
+#!homepage = https://github.com/harmonizr/loon-plugins
 #!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/DingDongMaiCai.png
 #!date = 2026-10-02 12:00
 
@@ -87,9 +87,9 @@ request if ${url} ~= /^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/queryMyPagePo
 request if ${url} ~= /^https?:\/\/maicai\.api\.ddxq\.mobi\/cart\/vipGuide/i then reject_dict(200)
 
 [Script]
-response if ${url} ~= /^https?:\/\/maicai\.api\.ddxq\.mobi\/tool\/getConfig/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/ddxq.js") with tag="[叮咚买菜]移除右下角AI", requires_body=true
+response if ${url} ~= /^https?:\/\/maicai\.api\.ddxq\.mobi\/tool\/getConfig/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/zirawell__R-Store/main/Res/Scripts/AntiAd/ddxq.js") with tag="[叮咚买菜]移除右下角AI", requires_body=true
 
-response if ${url} ~= /^https?:\/\/user\.api\.ddxq\.mobi\/userportal-service\/api\/v\d\/user\/queryMyPage/i then script("https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/ddxq.js") with tag="[叮咚买菜]净化我的页面", requires_body=true
+response if ${url} ~= /^https?:\/\/user\.api\.ddxq\.mobi\/userportal-service\/api\/v\d\/user\/queryMyPage/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/zirawell__R-Store/main/Res/Scripts/AntiAd/ddxq.js") with tag="[叮咚买菜]净化我的页面", requires_body=true
 
 [MitM]
 hostname = 119.29.29.*, maicai.api.ddxq.mobi, user.api.ddxq.mobi, gw.api.ddxq.mobi, user.api.ddxq.mobi

@@ -6,7 +6,7 @@
 #!system = 
 #!system_version = 
 #!loon_version = 3.5.2(1005)
-#!homepage = https://loonlab.103516.xyz/Plugin/
+#!homepage = https://github.com/harmonizr/loon-plugins
 #!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Listenify.png
 #!date = 2026-10-02 12:00
 
@@ -14,7 +14,7 @@
 # https://github.com/Yswag/for-own-use/blob/main/module/Listenify.sgmodule
 
 [Script]
-request if ${url} ~= /^https:\/\/api\.lrc\.cx\/(lyrics|cover)/i then script("https://raw.githubusercontent.com/Yswag/for-own-use/main/js/listenify.js") with tag="[Listenify]Lyrics"
+request if ${url} ~= /^https:\/\/api\.lrc\.cx\/(lyrics|cover)/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/Yswag__for-own-use/main/js/listenify.js") with tag="[Listenify]Lyrics"
 
 [MitM]
 hostname = api.lrc.cx

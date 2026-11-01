@@ -6,7 +6,7 @@
 #!system = 
 #!system_version = 
 #!loon_version = 3.5.2(1005)
-#!homepage = https://loonlab.103516.xyz/Plugin/
+#!homepage = https://github.com/harmonizr/loon-plugins
 #!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/SodaMusic.png
 #!date = 2026-10-02 12:00
 
@@ -66,7 +66,7 @@ request if ${url} ~= /^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.douyin\.co
 
 [Script]
 # 播放页面 - 视频流[响应体太大]
-response if ${url} ~= /^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.douyin\.com\/luna\/me\/recently-played-media\?/i then script("https://kelee.one/Resource/JavaScript/SodaMusic/SodaMusic_remove_ads.js") with tag="[汽水音乐]移除播放页面视频流", requires_body=true
+response if ${url} ~= /^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.douyin\.com\/luna\/me\/recently-played-media\?/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/kelee.one/Resource/JavaScript/SodaMusic/SodaMusic_remove_ads.js") with tag="[汽水音乐]移除播放页面视频流", requires_body=true
 
 [MitM]
 hostname = webcast-open.douyin.com, beta-luna.douyin.com, api.qishui.com, api5-lq.qishui.com, tnc*-*.zijieapi.com

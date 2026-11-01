@@ -6,7 +6,7 @@
 #!system = 
 #!system_version = 
 #!loon_version = 3.5.2(1005)
-#!homepage = https://loonlab.103516.xyz/Plugin/
+#!homepage = https://github.com/harmonizr/loon-plugins
 #!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/NodeSeek.png
 #!date = 2026-10-02 12:00
 
@@ -26,11 +26,11 @@ DOMAIN-SUFFIX, nodeseek.com, PROXY
 DOMAIN-SUFFIX, deepflood.com, PROXY
 
 [Script]
-request if ${url} ~= /^https:\/\/www\.nodeseek\.com\/api\/account\/getInfo\/\d+\?readme=1$/i then script("https://loon.103516.xyz/Script/NodeSeek/NodeSeek.checkin.js") with enable=${Cookie-NodeSeek}, tag="[NodeSeek]获取Cookie"
-cron ${Cron-NodeSeek} then script("https://loon.103516.xyz/Script/NodeSeek/NodeSeek.checkin.js", {${Mode-NodeSeek}}) with enable=${Task-NodeSeek}, tag="[NodeSeek]定时签到"
+request if ${url} ~= /^https:\/\/www\.nodeseek\.com\/api\/account\/getInfo\/\d+\?readme=1$/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/loon.103516.xyz/Script/NodeSeek/NodeSeek.checkin.js") with enable=${Cookie-NodeSeek}, tag="[NodeSeek]获取Cookie"
+cron ${Cron-NodeSeek} then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/loon.103516.xyz/Script/NodeSeek/NodeSeek.checkin.js", {${Mode-NodeSeek}}) with enable=${Task-NodeSeek}, tag="[NodeSeek]定时签到"
 
-request if ${url} ~= /^https:\/\/www\.deepflood\.com\/api\/account\/getInfo\/\d+\?readme=1$/i then script("https://loon.103516.xyz/Script/NodeSeek/DeepFlood.checkin.js") with enable=${Cookie-DeepFlood}, tag="[DeepFlood]获取Cookie"
-cron ${Cron-DeepFlood} then script("https://loon.103516.xyz/Script/NodeSeek/DeepFlood.checkin.js", {${Mode-DeepFlood}}) with enable=${Task-DeepFlood}, tag="[DeepFlood]定时签到"
+request if ${url} ~= /^https:\/\/www\.deepflood\.com\/api\/account\/getInfo\/\d+\?readme=1$/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/loon.103516.xyz/Script/NodeSeek/DeepFlood.checkin.js") with enable=${Cookie-DeepFlood}, tag="[DeepFlood]获取Cookie"
+cron ${Cron-DeepFlood} then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/loon.103516.xyz/Script/NodeSeek/DeepFlood.checkin.js", {${Mode-DeepFlood}}) with enable=${Task-DeepFlood}, tag="[DeepFlood]定时签到"
 
 [MitM]
 hostname = www.nodeseek.com, www.deepflood.com

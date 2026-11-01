@@ -6,7 +6,7 @@
 #!system = 
 #!system_version = 
 #!loon_version = 3.5.2(1005)
-#!homepage = https://loonlab.103516.xyz/Plugin/
+#!homepage = https://github.com/harmonizr/loon-plugins
 #!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Airport/GLaDOS-01.png
 #!date = 2026-10-02 12:00
 
@@ -26,8 +26,8 @@ DOMAIN-SUFFIX, glados.space, PROXY
 DOMAIN-SUFFIX, glados.vip, PROXY
 
 [Script]
-request if ${url} ~= /^https:\/\/glados\.(?:cloud|network|one|space|vip)\/console\/account$/i then script("https://loon.103516.xyz/Script/GLaDOS/GLaDOS.checkin.js") with enable=${Cookie-GLaDOS}, tag="[GLaDOS]每日签到Cookie"
-cron ${Cron-GLaDOS} then script("https://loon.103516.xyz/Script/GLaDOS/GLaDOS.checkin.js") with enable=${Task-GLaDOS}, tag="[GLaDOS]每日签到Task"
+request if ${url} ~= /^https:\/\/glados\.(?:cloud|network|one|space|vip)\/console\/account$/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/loon.103516.xyz/Script/GLaDOS/GLaDOS.checkin.js") with enable=${Cookie-GLaDOS}, tag="[GLaDOS]每日签到Cookie"
+cron ${Cron-GLaDOS} then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/loon.103516.xyz/Script/GLaDOS/GLaDOS.checkin.js") with enable=${Task-GLaDOS}, tag="[GLaDOS]每日签到Task"
 
 [MitM]
 hostname = glados.cloud, glados.network, glados.one, glados.space, glados.vip

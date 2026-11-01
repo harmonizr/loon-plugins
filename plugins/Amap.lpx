@@ -6,7 +6,7 @@
 #!system = 
 #!system_version = 
 #!loon_version = 3.5.2(1005)
-#!homepage = https://loonlab.103516.xyz/Plugin/
+#!homepage = https://github.com/harmonizr/loon-plugins
 #!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Amap.png
 #!date = 2026-10-20 15:00
 
@@ -62,7 +62,7 @@ response if ${url} ~= /^https:\/\/m5-zb\.amap\.com\/ws\/sharedtrip\/taxi\/order_
 response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\?/i then response.json.jq("del(.data.tipData, .data.wallet) | .data.cardList |= map(select(.dataKey == \"MineNewFootprintCard\" or .dataKey == \"MineNewBEntranceCardV4\")) | (.data.cardList[] | select(.dataKey == \"MineNewBEntranceCardV4\") | .content.entranceList_1) |= map(select(.id == 7 or .id == 8 or .id == 10 or .id == 17)) | (.data.cardList[] | select(.dataKey == \"MineNewBEntranceCardV4\") | .content.entranceList_2) |= map(select(.id == 1 or .id == 32 or .id == 9 or .id == 14))")
 
 # response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\?/i then response.json.delete("$.data.shadingWords")
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\?/i then response.json.jq_file("https://loon.103516.xyz/JQLang/Amap/Amap.recommend.jq")
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\?/i then response.json.jq_file("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/loon.103516.xyz/JQLang/Amap/Amap.recommend.jq")
 
 response if ${url} ~= /^https:\/\/sns\.amap\.com\/ws\/opc\/tools\/list\?/i then response.json.jq("(if (type == \"object\") and ((.data | type) == \"object\") and ((.data.category | type) == \"array\") then (.data.category[] | select(type == \"object\") | .tools | select(type == \"array\") | .[] | select(type == \"object\")) |= del(.tips) else . end) | (if (type == \"object\") and ((.data | type) == \"object\") and ((.data.category | type) == \"array\") then (.data.category[] | select(type == \"object\") | .tools | select(type == \"array\")) |= map(select(if type == \"object\" then (((.id | type) == \"string\" and .id == \"547\") or ((.id | type) == \"number\" and .id == 547)) | not else true end)) else . end)")
 
@@ -98,33 +98,33 @@ response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/smartui\/near_recommend\?/i
 # request if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\?/i then reject_dict(200)
 
 [Script]
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/aos\/perception\/publicTravel\/beforeNavi\?/i then script("https://rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除路线规划推广", requires_body=true
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/aos\/perception\/publicTravel\/beforeNavi\?/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除路线规划推广", requires_body=true
 
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/bus\/plan\/integrate\?/i then script("https://rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除路线规划、导航结束页推广", requires_body=true
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/bus\/plan\/integrate\?/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除路线规划、导航结束页推广", requires_body=true
 
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/c3frontend\/(?:af-(?:hotel|launch)\/page\/main|af-nearby\/nearby)/i then script("https://rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除导航详情页底部酒店、处理附近页", requires_body=true
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/c3frontend\/(?:af-(?:hotel|launch)\/page\/main|af-nearby\/nearby)/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除导航详情页底部酒店、处理附近页", requires_body=true
 
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/perception\/drive\/(?:routeInfo|routePlan)/i then script("https://rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除路线规划推广", requires_body=true
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/perception\/drive\/(?:routeInfo|routePlan)/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除路线规划推广", requires_body=true
 
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/search_bff\/hotword\?/i then script("https://rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除搜索栏推广", requires_body=true
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/search_bff\/hotword\?/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除搜索栏推广", requires_body=true
 
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/(?:mps|search\/sp|sug|tips_operation_location)/i then script("https://rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除搜索详情页推广", requires_body=true
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/(?:mps|search\/sp|sug|tips_operation_location)/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除搜索详情页推广", requires_body=true
 
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(?:card-service-plan-home|main-page)/i then script("https://rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除首页推广", requires_body=true
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(?:card-service-plan-home|main-page)/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除首页推广", requires_body=true
 
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\?/i then script("https://rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除首页推广", requires_body=true
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\?/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除首页推广", requires_body=true
 
-# response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\?/i then script("https://rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除我的页面推广", requires_body=true
+# response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\?/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除我的页面推广", requires_body=true
 
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/search\/nearbyrec_smart\?/i then script("https://rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除附近页推广", requires_body=true
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/shield\/search\/nearbyrec_smart\?/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除附近页推广", requires_body=true
 
-response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\?/i then script("https://rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除开屏广告", requires_body=true
+response if ${url} ~= /^https:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\?/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除开屏广告", requires_body=true
 
-response if ${url} ~= /^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:car\/order\/content_info|order_web\/friendly_information)/i then script("https://rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除打车页推广卡片、弹窗", requires_body=true
+response if ${url} ~= /^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:car\/order\/content_info|order_web\/friendly_information)/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除打车页推广卡片、弹窗", requires_body=true
 
-response if ${url} ~= /^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\?/i then script("https://rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除打车页红点角标、天气图标", requires_body=true
+response if ${url} ~= /^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\?/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除打车页红点角标、天气图标", requires_body=true
 
-response if ${url} ~= /^https:\/\/(?:info|m5)\.amap\.com\/ws\/shield\/search\/(?:common\/coupon\/info|poi\/detail)/i then script("https://rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除导航详情页推广", requires_body=true
+response if ${url} ~= /^https:\/\/(?:info|m5)\.amap\.com\/ws\/shield\/search\/(?:common\/coupon\/info|poi\/detail)/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/rucu6.pages.dev/Scripts/amap.js") with tag="[高德地图]移除导航详情页推广", requires_body=true
 
 [MitM]
 hostname = *.amap.com

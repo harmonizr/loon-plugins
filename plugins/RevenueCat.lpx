@@ -6,14 +6,14 @@
 #!system = 
 #!system_version = 
 #!loon_version = 3.5.2(1005)
-#!homepage = https://loonlab.103516.xyz/Plugin/
+#!homepage = https://github.com/harmonizr/loon-plugins
 #!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/RevenueCat.png
 #!date = 2026-10-02 12:00
 
 # 2026-10-17
-# https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
+# https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/chxm1023__Rewrite/main/Reheji.js
 # 2024-07-08
-# https://ddgksf2013.top/scripts/revenuecat.vip.js
+# https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/ddgksf2013.top/scripts/revenuecat.vip.js
 # 2025-01-10
 # https://github.com/Guding88/Script/blob/main/APPheji_Guding.plugin
 
@@ -27,16 +27,16 @@ request if ${url} ~= /^https:\/\/api\.lianjiu\.fun\/app\/api\/v1\/profile/i then
 
 [Script]
 # chxm1023
-response if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js") with enable=${RevenueCat-chxm1023}, tag="[RevenueCat]会员Crack响应@chxm1023", requires_body=true
-request if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js") with enable=${RevenueCat-chxm1023}, tag="[RevenueCat]会员Crack请求@chxm1023"
+response if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/chxm1023__Rewrite/main/Reheji.js") with enable=${RevenueCat-chxm1023}, tag="[RevenueCat]会员Crack响应@chxm1023", requires_body=true
+request if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/chxm1023__Rewrite/main/Reheji.js") with enable=${RevenueCat-chxm1023}, tag="[RevenueCat]会员Crack请求@chxm1023"
 
 # Guding88
-response if ${url} ~= /^https?:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/(subscribers\/[^\/]+$|receipts$)/i then script("https://raw.githubusercontent.com/Guding88/Script/main/APPheji_Revenuecat.js") with enable=${RevenueCat-Guding88}, tag="[RevenueCat]会员Crack响应@Guding88", requires_body=true
-request if ${url} ~= /^https?:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/(subscribers\/[^\/]+$|receipts$)/i then script("https://raw.githubusercontent.com/Guding88/Script/main/APPheji_Revenuecat.js") with enable=${RevenueCat-Guding88}, tag="[RevenueCat]会员Crack请求@Guding88"
+response if ${url} ~= /^https?:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/(subscribers\/[^\/]+$|receipts$)/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/Guding88__Script/main/APPheji_Revenuecat.js") with enable=${RevenueCat-Guding88}, tag="[RevenueCat]会员Crack响应@Guding88", requires_body=true
+request if ${url} ~= /^https?:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/(subscribers\/[^\/]+$|receipts$)/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/Guding88__Script/main/APPheji_Revenuecat.js") with enable=${RevenueCat-Guding88}, tag="[RevenueCat]会员Crack请求@Guding88"
 
 # ddgksf2013
-response if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://ddgksf2013.top/scripts/revenuecat.vip.js") with enable=${RevenueCat-ddgksf2013}, tag="[RevenueCat]会员Crack响应@ddgksf2013", requires_body=true
-request if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://raw.githubusercontent.com/ddgksf2013/Scripts/master/deleteHeader.js") with enable=${RevenueCat-ddgksf2013}, tag="[RevenueCat]会员Crack请求@ddgksf2013"
+response if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/ddgksf2013.top/scripts/revenuecat.vip.js") with enable=${RevenueCat-ddgksf2013}, tag="[RevenueCat]会员Crack响应@ddgksf2013", requires_body=true
+request if ${url} ~= /^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$)/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/ddgksf2013__Scripts/master/deleteHeader.js") with enable=${RevenueCat-ddgksf2013}, tag="[RevenueCat]会员Crack请求@ddgksf2013"
 
 [MitM]
 hostname = api.revenuecat.com, api.rc-backup.com, api.lianjiu.fun

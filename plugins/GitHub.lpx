@@ -6,7 +6,7 @@
 #!system = 
 #!system_version = 
 #!loon_version = 3.5.2(1005)
-#!homepage = https://loonlab.103516.xyz/Plugin/
+#!homepage = https://github.com/harmonizr/loon-plugins
 #!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/GitHub-01.png
 #!date = 2026-10-02 12:00
 
@@ -20,7 +20,7 @@ request if ${url} ~= /^https:\/\/.*\.githubusercontent\.com\//i then request.hea
 request if ${url} ~= /^https:\/\/github\.com\//i then request.header.set("Accept-Language", "en-us")
 
 [Script]
-request if ${url} ~= /^https?:\/\/raw\.githubusercontent\.com\/.+/i then script("https://loon.103516.xyz/Script/GitHub/GitRawAutoCDN.js") with tag="[GitHub]将Raw请求自动重定向到CDN", timeout=5
+request if ${url} ~= /^https?:\/\/raw\.githubusercontent\.com\/.+/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/loon.103516.xyz/Script/GitHub/GitRawAutoCDN.js") with tag="[GitHub]将Raw请求自动重定向到CDN", timeout=5
 
 [MitM]
 hostname = github.com, *.githubusercontent.com

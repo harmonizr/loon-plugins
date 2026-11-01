@@ -6,7 +6,7 @@
 #!system = 
 #!system_version = 
 #!loon_version = 3.5.2(1005)
-#!homepage = https://loonlab.103516.xyz/Plugin/
+#!homepage = https://github.com/harmonizr/loon-plugins
 #!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Soul.png
 #!date = 2026-10-02 12:00
 
@@ -169,15 +169,15 @@ response if ${url} ~= /^https:\/\/post\.soulapp\.cn\/homepage\/tabs\/v2/i then r
 response if ${url} ~= /^https:\/\/chat-live\.soulapp\.cn\/chatroom\/getRoomTagInfo/i then response.json.jq(".data.res |= map(.iconConfig = null)")
 
 [Script]
-# response if ${url} ~= /^https:\/\/api-user\.soulapp\.cn\/v6\/planet\/config/i then script("https://raw.githubusercontent.com/ishowshu/qx/main/script/soul.js", {${soulMatch}, ${voiceMatch}, ${partyMatch}, ${masked}, ${maskedMatch}, ${planet}}) with enable=${planetPage}, tag="[Soul]星球页面按钮"
+# response if ${url} ~= /^https:\/\/api-user\.soulapp\.cn\/v6\/planet\/config/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/ishowshu__qx/main/script/soul.js", {${soulMatch}, ${voiceMatch}, ${partyMatch}, ${masked}, ${maskedMatch}, ${planet}}) with enable=${planetPage}, tag="[Soul]星球页面按钮"
 
-# response if ${url} ~= /^https:\/\/chat-live\.soulapp\.cn\/chatroom\/getRoomTagInfo/i then script("https://raw.githubusercontent.com/ishowshu/qx/main/script/soul.js", {${hot}, ${all}, ${emotion}, ${personal}, ${play}, ${interest}, ${argue}, ${story}, ${chat}, ${heart}}) with tag="[Soul]派对频道列表"
+# response if ${url} ~= /^https:\/\/chat-live\.soulapp\.cn\/chatroom\/getRoomTagInfo/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/ishowshu__qx/main/script/soul.js", {${hot}, ${all}, ${emotion}, ${personal}, ${play}, ${interest}, ${argue}, ${story}, ${chat}, ${heart}}) with tag="[Soul]派对频道列表"
 
-response if ${url} ~= /^https:\/\/api-user\.soulapp\.cn\/user\/homepage\/metrics/i then script("https://raw.githubusercontent.com/ishowshu/qx/main/script/soul.js") with enable=${vist}, tag="[Soul]个人主页数量提示", requires_body=true
+response if ${url} ~= /^https:\/\/api-user\.soulapp\.cn\/user\/homepage\/metrics/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/ishowshu__qx/main/script/soul.js") with enable=${vist}, tag="[Soul]个人主页数量提示", requires_body=true
 
-response if ${url} ~= /^https:\/\/api-chat\.soulapp\.cn\/chat\/limitInfo/i then script("https://raw.githubusercontent.com/ishowshu/qx/main/script/soul.js") with enable=${chatPri}, tag="[Soul]去除私聊限制", requires_body=true
+response if ${url} ~= /^https:\/\/api-chat\.soulapp\.cn\/chat\/limitInfo/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/ishowshu__qx/main/script/soul.js") with enable=${chatPri}, tag="[Soul]去除私聊限制", requires_body=true
 
-response if ${url} ~= /^https:\/\/api-chat\.soulapp\.cn\/snapchat\/url/i then script("https://raw.githubusercontent.com/ishowshu/qx/main/script/soul.js") with enable=${picRead}, tag="[Soul]私聊阅后即焚", requires_body=true
+response if ${url} ~= /^https:\/\/api-chat\.soulapp\.cn\/snapchat\/url/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/ishowshu__qx/main/script/soul.js") with enable=${picRead}, tag="[Soul]私聊阅后即焚", requires_body=true
 
 [MitM]
 hostname = ssp.soulapp.cn, increase-openapi.soulapp.cn, post.soulapp.cn, api-account.soulapp.cn, api-a.soulapp.cn, gateway-mobile-gray.soulapp.cn, api-user.soulapp.cn, chat-live.soulapp.cn, api-chat.soulapp.cn, activity.soulapp.cn, 47.110.187.87, 47.75.72.47, 47.96.7.91, 47.96.11.46, 47.96.20.45, 47.97.215.55, 47.98.54.106, 47.98.137.249, 47.99.42.29, 114.215.255.94, 116.62.28.7, 116.62.47.28, 118.31.7.235, 118.31.112.221, 120.27.235.201, 120.55.55.115, 120.55.62.124, 121.196.197.147, 121.196.203.183

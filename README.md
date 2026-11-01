@@ -12,32 +12,55 @@
 
 ```
 .
-├── plugins/            # 136 个 .lpx 插件源码
-├── manifest.json       # 带 sha256 的完整清单
-├── plugins.all.json    # 源站全量索引
-├── plugins.json        # 源站默认(展示)索引
-├── index.md            # 纯表格索引
-└── sync.py             # 增量同步脚本（--force 全量 / --check 只检查）
+├── plugins/               # 136 个 .lpx 插件源码（脚本链接已全部指向本仓库）
+├── scripts/               # 271 个镜像下来的第三方脚本（按 域名/仓库/路径 存放）
+├── manifest.json          # 带 sha256 的完整清单
+├── scripts-mapping.json   # 上游原始 URL -> 本地路径 的映射表
+├── plugins.all.json       # 源站全量索引
+├── plugins.json           # 源站默认(展示)索引
+├── index.md               # 纯表格索引
+├── sync.py                # 从上游站同步插件本体
+├── localize.py            # 下载插件引用的第三方脚本
+├── rewrite.py             # 把插件里的第三方向址改写为本仓库 raw
+└── .github/workflows/sync.yml   # 每日自动执行上面三步并提交
 ```
+
+## 自给自足说明
+
+所有 `.lpx` 里的脚本调用（**532 处 / 271 个脚本**）都已改写为本仓库地址：
+
+```
+原: https://rucu6.pages.dev/Scripts/zhihu.js
+新: https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/rucu6.pages.dev/Scripts/zhihu.js
+```
+
+这样即使上游作者删库 / 改路径 / 关站，插件照样能跑。
+
+**没有镜像、也不该镜像的东西**（改了会让插件失效）：
+
+- 被拦截 App 自身的 API 地址（`ucmp.sf-express.com`、`grpc.biliapi.net` 等）——这些是插件要匹配/改写流量的目标
+- 广告拦截用的远程图片/像素（`i.im.ge` 等）
+- 不参与运行的普通网址，如软件官网、应用商店链接、注释里的原始出处
 
 ## 怎么用
 
-**自己在 Loon 里安装本仓库的插件**（推送到 GitHub 后）：
+**在 Loon 里安装本仓库的插件**：
 
 ```
-https://raw.githubusercontent.com/<你的用户名>/<仓库名>/main/plugins/<文件名>.lpx
+https://raw.githubusercontent.com/harmonizr/loon-plugins/main/plugins/BlockAds.lpx
 ```
 
-**修改插件**：直接编辑 `plugins/xxx.lpx`，开头 `#!name / #!desc / #!icon / #!tag` 是元信息，其余是 `[Script]`、`[Rewrite]`、`[MITM]`、`[Plugin]` 等段落。
+**修改插件**：直接编辑 `plugins/xxx.lpx`，开头 `#!name / #!desc / #!icon / #!tag / #!homepage` 是元信息，其余是 `[Script]`、`[Rewrite]`、`[MITM]`、`[Plugin]` 等段落。
 
-**重新同步**（需要 Python 3）：
+**本地重新同步**（需要 Python 3）：
 
 ```bash
-python3 sync.py          # 增量：只下载源站有更新/新增的插件
-python3 sync.py --force  # 全量重下
+python3 sync.py          # 增量拉取上游插件（--force 全量 / --check 只检查）
+python3 localize.py /tmp/refs.json   # 下载新出现的第三方脚本
+python3 rewrite.py       # 把插件链接改指本仓库
 ```
 
-> 同步要点：源站 `loon.103516.xyz` 对普通浏览器/curl 会把请求 302 跳去 Telegram，只有带 **Loon 客户端 UA**（`Loon/3.x CFNetwork/...`）才直接返回 `.lpx` 原文。脚本里已处理。
+> 同步要点：源站 `loon.103516.xyz` 对普通浏览器/curl 会把请求 302 跳去 Telegram，只认 **Loon 客户端 UA**（`Loon/3.x CFNetwork/...`）。`sync.py` 与 `localize.py` 已内置。
 
 ## 全部插件
 
