@@ -95,7 +95,7 @@ request if ${url} ~= /^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?tx
 request if ${url} ~= /^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341C147/i then reject(200)
 # 我的页面悬浮广告
 response if ${url} ~= /^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?/i then response.body.replace(/"TAG_AD_INFO"/, "\"fmz200\"")
-response if ${url} ~= /^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?txcode=A3341AB05/i then response.body.mock_file("json", "https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/harmonizr__loon-plugins/main/scripts/raw.githubusercontent.com/fmz200__wool_scripts/main/Scripts/ccbLife/A3341AB05.json", 200)
+response if ${url} ~= /^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?txcode=A3341AB05/i then response.body.mock_file("json", "https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/fmz200__wool_scripts/main/Scripts/ccbLife/A3341AB05.json", 200)
 # 内置饿了么
 request if ${url} ~= /^https?:\/\/waimai-guide\.ele\.me\/\w+\/mtop\.alsc\.eleme\.\w+\.trigger\.respond/i then reject_dict(200)
 request if ${url} ~= /^https?:\/\/waimai-guide\.ele\.me\/\w+\/mtop\.alsc\.wamai\.store\.detail\.miniapp\.popup/i then reject(404)

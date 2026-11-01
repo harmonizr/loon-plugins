@@ -10,12 +10,12 @@
 #!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/BilibiliBlue.png
 #!date = 2026-10-05 00:00
 
-# https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/ddgksf2013.top.index.jsmodule/BiliBili.Surge.Vip.sgmodule
+# https://ddgksf2013.top/module/BiliBili.Surge.Vip.sgmodule
 
 [Script]
-request if ${url} ~= /^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.playerunite\.v1\.Player\/PlayViewUnite/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/harmonizr__loon-plugins/main/scripts/ddgksf2013.top/scripts/bilibili.vip.js") with tag="[哔哩哔哩]大会员Crack_Request", timeout=60, requires_body=true, binary_body_mode=true
+request if ${url} ~= /^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.playerunite\.v1\.Player\/PlayViewUnite/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/ddgksf2013.top/scripts/bilibili.vip.js") with tag="[哔哩哔哩]大会员Crack_Request", timeout=60, requires_body=true, binary_body_mode=true
 
-response if ${url} ~= /^https?:\/\/app\.bilibili\.com\/x\/v2\/account\//i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/harmonizr__loon-plugins/main/scripts/ddgksf2013.top/scripts/bili_myinfo_vip.js") with tag="[哔哩哔哩]大会员Crack_Respone", timeout=60, requires_body=true
+response if ${url} ~= /^https?:\/\/app\.bilibili\.com\/x\/v2\/account\//i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/ddgksf2013.top/scripts/bili_myinfo_vip.js") with tag="[哔哩哔哩]大会员Crack_Respone", timeout=60, requires_body=true
 
 [MitM]
 hostname = grpc.biliapi.net, app.bilibili.com

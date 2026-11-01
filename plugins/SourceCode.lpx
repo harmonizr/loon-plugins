@@ -13,7 +13,7 @@
 [Argument]
 loonlab-target = select, "Loon", "Surge", "Egern", "Shadowrocket", tag = [恩秀插件]目标客户端, desc = https://loonlab.103516.xyz/Plugin/
 keleeone-target = select, "Loon", "Surge", "Egern", "Shadowrocket", tag = [可莉插件]目标客户端, desc = https://hub.kelee.one/
-ddgksf2013-target = select, "Quantumult X", "Loon", "Surge", "Egern", "Shadowrocket", tag = [墨鱼重写]目标客户端, desc = https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/ddgksf2013.top.index.js
+ddgksf2013-target = select, "Quantumult X", "Loon", "Surge", "Egern", "Shadowrocket", tag = [墨鱼重写]目标客户端, desc = https://ddgksf2013.top/
 
 [Rule]
 DOMAIN-SUFFIX, 103516.xyz, PROXY

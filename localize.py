@@ -28,8 +28,14 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 
+OWN_REPO = "harmonizr/loon-plugins"
+
+
 def is_mirrorable(u):
     p = urlparse(u)
+    # 绝不镜像本仓库自己的地址（否则每次同步都会自我复制一份）
+    if OWN_REPO in p.path:
+        return False
     if p.netloc not in MIRROR_HOSTS:
         return False
     if "${" in u or "$1" in u:
