@@ -11,9 +11,9 @@
 #!date = 2026-10-02 12:00
 
 # 2026-10-11
-# https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/chxm1023__Rewrite/main/iTunes.js
+# https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/harmonizr__loon-plugins/main/scripts/raw.githubusercontent.com/chxm1023__Rewrite/main/iTunes.js
 # 2024-01-24
-# https://ddgksf2013.top/scripts/buyitunes.vip.js
+# https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/ddgksf2013.top.index.jsscripts/buyitunes.vip.js
 # 2024-02-10
 # https://github.com/Guding88/Script/blob/main/APPheji_iTunes.js
 
@@ -24,13 +24,13 @@ iTunes-Guding88 = switch, false, true, tag = iTunes-Guding88, desc = 是否启�
 
 [Script]
 # chxm1023
-response if ${url} ~= /^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/chxm1023__Rewrite/main/iTunes.js") with enable=${iTunes-chxm1023}, tag="[iTunes]会员Crack@chxm1023", requires_body=true
+response if ${url} ~= /^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/harmonizr__loon-plugins/main/scripts/raw.githubusercontent.com/chxm1023__Rewrite/main/iTunes.js") with enable=${iTunes-chxm1023}, tag="[iTunes]会员Crack@chxm1023", requires_body=true
 
 # ddgksf2013
-response if ${url} ~= /^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/loon.103516.xyz/Script/iTunes/iTunes.ddgksf2013.js") with enable=${iTunes-ddgksf2013}, tag="[iTunes]会员Crack@ddgksf2013", requires_body=true
+response if ${url} ~= /^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/harmonizr__loon-plugins/main/scripts/loon.103516.xyz/Script/iTunes/iTunes.ddgksf2013.js") with enable=${iTunes-ddgksf2013}, tag="[iTunes]会员Crack@ddgksf2013", requires_body=true
 
 # Guding88
-response if ${url} ~= /^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/Guding88__Script/main/APPheji_iTunes.js") with enable=${iTunes-Guding88}, tag="[iTunes]会员Crack@Guding88", requires_body=true
+response if ${url} ~= /^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/harmonizr__loon-plugins/main/scripts/raw.githubusercontent.com/Guding88__Script/main/APPheji_iTunes.js") with enable=${iTunes-Guding88}, tag="[iTunes]会员Crack@Guding88", requires_body=true
 
 [MitM]
 hostname = buy.itunes.apple.com

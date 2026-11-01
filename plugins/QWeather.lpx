@@ -11,7 +11,7 @@
 #!date = 2026-10-02 12:00
 
 # 2026-01-19 V1.0.1
-# https://ddgksf2013.top/rewrite/HeFengWeatherAds.conf
+# https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/ddgksf2013.top.index.jsrewrite/HeFengWeatherAds.conf
 
 [Rewrite]
 response if ${url} ~= /^https?:\/\/hfapp-service\.qweather\.net\/.*\/app\/ad\/list/i then response.json.jq(".data=[]")

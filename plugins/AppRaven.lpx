@@ -14,7 +14,7 @@
 # https://github.com/Yu9191/Rewrite/blob/main/AppRaven.js
 
 [Script]
-response if ${url} ~= /^https:\/\/appraven\.net\/appraven\/graphql/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/loon.103516.xyz/Script/AppRaven/AppRaven.js") with tag="[AppRaven]会员Crack", requires_body=true
+response if ${url} ~= /^https:\/\/appraven\.net\/appraven\/graphql/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/harmonizr__loon-plugins/main/scripts/loon.103516.xyz/Script/AppRaven/AppRaven.js") with tag="[AppRaven]会员Crack", requires_body=true
 
 [MitM]
 hostname = appraven.net

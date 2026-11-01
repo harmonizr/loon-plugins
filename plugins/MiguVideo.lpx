@@ -11,7 +11,7 @@
 #!date = 2026-10-02 12:00
 
 # 2026-02-14 V1.0.3
-# https://ddgksf2013.top/rewrite/MiGuVideoAds.conf
+# https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/ddgksf2013.top.index.jsrewrite/MiGuVideoAds.conf
 # 2026-05-14
 # https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/migu_vip_share.snippet
 
@@ -25,13 +25,13 @@ response if ${url} ~= /^https:\/\/.*miguvideo\.com\/recommend-dynamic\/dataSourc
 response if ${url} ~= /^https:\/\/.*migu\.cn\/search\/hotword/i then response.json.jq(".body={}")
 
 [Script]
-request if ${url} ~= /^https?:\/\/(play|play-pre|v|v[0-9]?-sc|vmesh|app-sc|vms-sc|display(-sc)?|common-sc|program-sc|d[0-9]-sc|fs-sc|fsdv-sc|mp-user|recommend-dy|chat|chat-wx|public-deliver[0-9]?|public-operbiz[0-9]?|public-img)\.miguvideo\.com\/.+/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/ZenmoFeiShi__Qx/main/migu_vip.js") with tag="[咪咕视频]会员Crack", requires_body=false
+request if ${url} ~= /^https?:\/\/(play|play-pre|v|v[0-9]?-sc|vmesh|app-sc|vms-sc|display(-sc)?|common-sc|program-sc|d[0-9]-sc|fs-sc|fsdv-sc|mp-user|recommend-dy|chat|chat-wx|public-deliver[0-9]?|public-operbiz[0-9]?|public-img)\.miguvideo\.com\/.+/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/harmonizr__loon-plugins/main/scripts/raw.githubusercontent.com/ZenmoFeiShi__Qx/main/migu_vip.js") with tag="[咪咕视频]会员Crack", requires_body=false
 
-request if ${url} ~= /^https?:\/\/(passport|uem|push|jadeite|jadeiteapp|hound|feedback|rcsdk)\.migu\.cn\/.+/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/ZenmoFeiShi__Qx/main/migu_vip.js") with tag="[咪咕视频]会员Crack", requires_body=false
+request if ${url} ~= /^https?:\/\/(passport|uem|push|jadeite|jadeiteapp|hound|feedback|rcsdk)\.migu\.cn\/.+/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/harmonizr__loon-plugins/main/scripts/raw.githubusercontent.com/ZenmoFeiShi__Qx/main/migu_vip.js") with tag="[咪咕视频]会员Crack", requires_body=false
 
-response if ${url} ~= /^https:\/\/.*miguvideo\.com\/app-management\/v\d\/staticcache\/navigation-list\/miguvideo\/ios/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/ddgksf2013.top/scripts/migu.ads.js") with tag="[咪咕视频]移除广告", requires_body=true
+response if ${url} ~= /^https:\/\/.*miguvideo\.com\/app-management\/v\d\/staticcache\/navigation-list\/miguvideo\/ios/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/harmonizr__loon-plugins/main/scripts/ddgksf2013.top/scripts/migu.ads.js") with tag="[咪咕视频]移除广告", requires_body=true
 
-response if ${url} ~= /^https:\/\/.*miguvideo\.com\/display\/v\d\/static\/PERSONAL_CENTER/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/ddgksf2013.top/scripts/migu.ads.js") with tag="[咪咕视频]移除广告", requires_body=true
+response if ${url} ~= /^https:\/\/.*miguvideo\.com\/display\/v\d\/static\/PERSONAL_CENTER/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/harmonizr__loon-plugins/main/scripts/ddgksf2013.top/scripts/migu.ads.js") with tag="[咪咕视频]移除广告", requires_body=true
 
 [MitM]
 hostname = *.miguvideo.com, *.migu.cn

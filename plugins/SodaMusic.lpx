@@ -66,7 +66,7 @@ request if ${url} ~= /^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.douyin\.co
 
 [Script]
 # 播放页面 - 视频流[响应体太大]
-response if ${url} ~= /^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.douyin\.com\/luna\/me\/recently-played-media\?/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/kelee.one/Resource/JavaScript/SodaMusic/SodaMusic_remove_ads.js") with tag="[汽水音乐]移除播放页面视频流", requires_body=true
+response if ${url} ~= /^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.douyin\.com\/luna\/me\/recently-played-media\?/i then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/harmonizr__loon-plugins/main/scripts/kelee.one/Resource/JavaScript/SodaMusic/SodaMusic_remove_ads.js") with tag="[汽水音乐]移除播放页面视频流", requires_body=true
 
 [MitM]
 hostname = webcast-open.douyin.com, beta-luna.douyin.com, api.qishui.com, api5-lq.qishui.com, tnc*-*.zijieapi.com

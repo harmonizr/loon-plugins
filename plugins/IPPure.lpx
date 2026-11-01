@@ -11,4 +11,4 @@
 #!date = 2026-10-02 12:00
 
 [Script]
-generic then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/loon.103516.xyz/Script/IPPure/IPPure.js") with tag="IPPure", img_url="leaf", timeout=10
+generic then script("https://raw.githubusercontent.com/harmonizr/loon-plugins/main/scripts/raw.githubusercontent.com/harmonizr__loon-plugins/main/scripts/loon.103516.xyz/Script/IPPure/IPPure.js") with tag="IPPure", img_url="leaf", timeout=10
