@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-01 11:39",
+  "last_updated": "2026-11-01 21:29",
   "plugins": [
     {
       "name": "1.1.1.1 with WARP",
@@ -329,7 +329,7 @@
       "name": "哔哩哔哩",
       "desc": "过滤哔哩哔哩广告",
       "icon": "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/BilibiliPink.png",
-      "date": "2026-10-30 23:00",
+      "date": "2026-11-01 21:00",
       "tags": [
         "去广告"
       ],
@@ -2311,7 +2311,7 @@
       "name": "腾讯视频",
       "desc": "不负好时光 [不负好广告]",
       "icon": "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/TencentVideo.png",
-      "date": "2026-10-27 16:00",
+      "date": "2026-11-01 21:00",
       "tags": [
         "去广告"
       ],
