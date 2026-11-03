@@ -1,8 +1,8 @@
 {
   "source": "https://loonlab.103516.xyz/Plugin/",
-  "last_updated": "2026-11-01 21:29",
-  "synced_at": "2026-11-01 23:14:18",
-  "count": 136,
+  "last_updated": "2026-11-02 21:18",
+  "synced_at": "2026-11-03 01:55:42",
+  "count": 137,
   "plugins": [
     {
       "name": "1.1.1.1 with WARP",
@@ -3407,6 +3407,27 @@
       "local_path": "plugins/ZhiHu.lpx",
       "bytes": 13157,
       "sha256": "813f8bf518c2986a6031de0229728ac8af784987672020524481642c2134a757"
+    },
+    {
+      "name": "转转",
+      "desc": "过滤转转广告",
+      "icon": "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/ZhuanZhuan.png",
+      "date": "2026-11-02 21:00",
+      "tags": [
+        "去广告"
+      ],
+      "authors": [
+        {
+          "name": "ddgksf2013",
+          "url": "https://github.com/ddgksf2013",
+          "avatar": "https://github.com/ddgksf2013.png"
+        }
+      ],
+      "url": "https://loon.103516.xyz/Plugin/ZhuanZhuan.lpx",
+      "filename": "ZhuanZhuan.lpx",
+      "local_path": "plugins/ZhuanZhuan.lpx",
+      "bytes": 4756,
+      "sha256": "f149bdb04490d897d5519290b120a5d0b752c58be516875f2be1d51eeba61097"
     }
   ]
 }

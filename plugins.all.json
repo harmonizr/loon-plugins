@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-01 21:29",
+  "last_updated": "2026-11-02 21:18",
   "plugins": [
     {
       "name": "1.1.1.1 with WARP",
@@ -2881,6 +2881,24 @@
       ],
       "url": "https://loon.103516.xyz/Plugin/ZhiHu.lpx",
       "filename": "ZhiHu.lpx"
+    },
+    {
+      "name": "转转",
+      "desc": "过滤转转广告",
+      "icon": "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/ZhuanZhuan.png",
+      "date": "2026-11-02 21:00",
+      "tags": [
+        "去广告"
+      ],
+      "authors": [
+        {
+          "name": "ddgksf2013",
+          "url": "https://github.com/ddgksf2013",
+          "avatar": "https://github.com/ddgksf2013.png"
+        }
+      ],
+      "url": "https://loon.103516.xyz/Plugin/ZhuanZhuan.lpx",
+      "filename": "ZhuanZhuan.lpx"
     },
     {
       "name": "iRingo:WeatherKit",
