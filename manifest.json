@@ -1,7 +1,7 @@
 {
   "source": "https://loonlab.103516.xyz/Plugin/",
-  "last_updated": "2026-11-03 22:01",
-  "synced_at": "2026-11-04 00:17:03",
+  "last_updated": "2026-11-04 21:02",
+  "synced_at": "2026-11-05 00:39:38",
   "count": 137,
   "plugins": [
     {
@@ -377,7 +377,7 @@
       "name": "哔哩哔哩",
       "desc": "过滤哔哩哔哩广告",
       "icon": "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/BilibiliPink.png",
-      "date": "2026-11-02 21:00",
+      "date": "2026-11-04 21:00",
       "tags": [
         "去广告"
       ],
