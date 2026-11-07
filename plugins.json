@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-05 23:20",
+  "last_updated": "2026-11-07 23:06",
   "plugins": [
     {
       "name": "1.1.1.1 with WARP",
@@ -234,7 +234,7 @@
       "name": "哔哩哔哩",
       "desc": "过滤哔哩哔哩广告",
       "icon": "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/BilibiliPink.png",
-      "date": "2026-11-05 23:00",
+      "date": "2026-11-07 23:00",
       "tags": [
         "去广告"
       ],
