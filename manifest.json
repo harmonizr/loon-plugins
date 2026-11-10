@@ -1,8 +1,8 @@
 {
   "source": "https://loonlab.103516.xyz/Plugin/",
-  "last_updated": "2026-11-07 23:06",
-  "synced_at": "2026-11-08 23:17:49",
-  "count": 137,
+  "last_updated": "2026-11-09 21:28",
+  "synced_at": "2026-11-10 02:28:19",
+  "count": 136,
   "plugins": [
     {
       "name": "1.1.1.1 with WARP",
@@ -1627,27 +1627,6 @@
       "local_path": "plugins/Listenify.lpx",
       "bytes": 791,
       "sha256": "9d6634c849b3a69e6957b755d8098144d2e4dc60e581da57df17b63ec9e447a4"
-    },
-    {
-      "name": "掌上英雄联盟",
-      "desc": "过滤掌上英雄联盟广告",
-      "icon": "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/LOL_Bible.png",
-      "date": "2026-11-02 21:00",
-      "tags": [
-        "去广告"
-      ],
-      "authors": [
-        {
-          "name": "可莉🅥",
-          "url": "https://github.com/luestr/ProxyResource/blob/main/README.md",
-          "avatar": "https://github.com/luestr.png"
-        }
-      ],
-      "url": "https://loon.103516.xyz/Plugin/LOL_Bible.lpx",
-      "filename": "LOL_Bible.lpx",
-      "local_path": "plugins/LOL_Bible.lpx",
-      "bytes": 1702,
-      "sha256": "0d3e994817edc182ca4733bbedcabadcddadb7099f473f6319917b1ef635c063"
     },
     {
       "name": "Loon Gallery",

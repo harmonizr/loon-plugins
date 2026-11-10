@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-07 23:06",
+  "last_updated": "2026-11-09 21:28",
   "plugins": [
     {
       "name": "1.1.1.1 with WARP",
@@ -1337,24 +1337,6 @@
       ],
       "url": "https://loon.103516.xyz/Plugin/Kwai.lpx",
       "filename": "Kwai.lpx"
-    },
-    {
-      "name": "掌上英雄联盟",
-      "desc": "过滤掌上英雄联盟广告",
-      "icon": "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/LOL_Bible.png",
-      "date": "2026-11-02 21:00",
-      "tags": [
-        "去广告"
-      ],
-      "authors": [
-        {
-          "name": "可莉🅥",
-          "url": "https://github.com/luestr/ProxyResource/blob/main/README.md",
-          "avatar": "https://github.com/luestr.png"
-        }
-      ],
-      "url": "https://loon.103516.xyz/Plugin/LOL_Bible.lpx",
-      "filename": "LOL_Bible.lpx"
     },
     {
       "name": "Listenify",
