@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-09 21:28",
+  "last_updated": "2026-11-10 23:03",
   "plugins": [
     {
       "name": "1.1.1.1 with WARP",
@@ -1512,9 +1512,9 @@
     },
     {
       "name": "Spotify",
-      "desc": "移除Spotify广告并解锁部分高级功能。音质无法设置为“极高（Very High）”。设置中Protobuf脚本只能启用其中一个，不能同时启用。启用插件后，请重新登录以应用完整配置。",
+      "desc": "移除Spotify广告并解锁部分高级功能。音质无法设置为“极高（Very High）”。可选功能：隐藏正在播放页面的发现推荐信息流、设置页面的会员信息及AI DJ入口。启用插件后，请重新登录以应用完整配置。\\n该插件基于devchristian1337的Spotify插件汉化。",
       "icon": "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Spotify.png",
-      "date": "2026-11-02 21:00",
+      "date": "2026-11-10 23:00",
       "tags": [
         "去广告",
         "会员解锁"
@@ -1982,9 +1982,9 @@
     },
     {
       "name": "YouTube",
-      "desc": "移除YouTube应用广告、启用后台播放，并翻译现有字幕轨道（目标语言为zh-CN或en-US；没有字幕的视频无法翻译）。默认仅记录媒体响应头；完整采样可能增加延迟。\\n该插件基于devchristian1337的YouTube插件汉化。",
+      "desc": "移除YouTube应用中的广告，包括首页信息流、搜索、Shorts和播放器广告；支持可选的后台播放、隐藏Shorts栏目及底部栏按钮、手动或远程频道屏蔽列表，以及将字幕翻译为简体中文或美式英语。日志工具默认仅记录媒体响应头，完整采样可能增加延迟。\\n该插件基于devchristian1337的YouTube插件汉化。",
       "icon": "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/YouTube.png",
-      "date": "2026-11-02 21:00",
+      "date": "2026-11-10 23:00",
       "tags": [
         "去广告",
         "功能增强"
