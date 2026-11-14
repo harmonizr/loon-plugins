@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-10 23:03",
+  "last_updated": "2026-11-14 00:10",
   "plugins": [
     {
       "name": "1.1.1.1 with WARP",
@@ -1551,7 +1551,7 @@
       "name": "Sub-Store",
       "desc": "高级订阅管理工具。使用前请在本插件的详情页面为[PROXY]项分配代理策略。定时任务默认为每天23点55分，可在插件设置中自定义。定时任务指定时将订阅/文件上传到私有Gist。在前端，叫做'同步'或'同步配置'。",
       "icon": "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Sub-Store.png",
-      "date": "2026-11-02 21:00",
+      "date": "2026-11-14 00:00",
       "tags": [
         "功能增强"
       ],
@@ -1722,6 +1722,24 @@
       ],
       "url": "https://loon.103516.xyz/Plugin/UAPI_HotBoard.lpx",
       "filename": "UAPI_HotBoard.lpx"
+    },
+    {
+      "name": "航旅纵横",
+      "desc": "过滤航旅纵横广告",
+      "icon": "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Umetrip.png",
+      "date": "2026-11-05 23:00",
+      "tags": [
+        "去广告"
+      ],
+      "authors": [
+        {
+          "name": "xingjiu29",
+          "url": "https://github.com/xingjiu29",
+          "avatar": "https://github.com/xingjiu29.png"
+        }
+      ],
+      "url": "https://loon.103516.xyz/Plugin/Umetrip.lpx",
+      "filename": "Umetrip.lpx"
     },
     {
       "name": "VVebo",
