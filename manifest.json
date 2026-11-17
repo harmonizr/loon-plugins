@@ -1,7 +1,7 @@
 {
   "source": "https://loonlab.103516.xyz/Plugin/",
-  "last_updated": "2026-11-15 09:08",
-  "synced_at": "2026-11-15 23:39:24",
+  "last_updated": "2026-11-16 23:18",
+  "synced_at": "2026-11-17 02:42:14",
   "count": 136,
   "plugins": [
     {
@@ -429,7 +429,7 @@
       "name": "广告拦截合集",
       "desc": "针对部分APP和小程序广告进行拦截，某些APP要清除缓存或者重新安装拦截广告才会生效！",
       "icon": "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Other/ShieldReject.png",
-      "date": "2026-11-02 21:00",
+      "date": "2026-11-16 23:00",
       "tags": [
         "去广告"
       ],
@@ -1337,9 +1337,9 @@
     },
     {
       "name": "iRingo:WeatherKit",
-      "desc": "1.解锁全部天气功能；2.替换空气质量数据；3.添加下一小时降水数据；4.添加天气数据。\\n仅支持iOS 18 & macOS 15 & watchOS 11及以上版本。",
+      "desc": "1.解锁全部天气功能；2.修改空气质量数据；3.修改下一小时降水数据；4.修改天气数据；5.修改天气预警数据。\\n仅支持iOS 18 & macOS 15 & watchOS 11及以上版本。",
       "icon": "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/AppleWeather.png",
-      "date": "2026-11-02 21:00",
+      "date": "2026-11-16 18:00",
       "tags": [
         "功能增强"
       ],
