@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-18 19:00",
+  "last_updated": "2026-11-20 00:37",
   "plugins": [
     {
       "name": "1.1.1.1 with WARP",
@@ -1609,6 +1609,24 @@
       ],
       "url": "https://loon.103516.xyz/Plugin/Netisp-x.lpx",
       "filename": "Netisp-x.lpx"
+    },
+    {
+      "name": "九号出行",
+      "desc": "九号出行每日签到。首次使用需进入「我的-签到中心」，手动签到一次以获取凭证。获取成功后，可关闭获取凭证脚本。",
+      "icon": "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Ninebot-03.png",
+      "date": "2026-11-20 00:00",
+      "tags": [
+        "功能增强"
+      ],
+      "authors": [
+        {
+          "name": "sooyaaabo",
+          "url": "https://github.com/sooyaaabo",
+          "avatar": "https://github.com/sooyaaabo.png"
+        }
+      ],
+      "url": "https://loon.103516.xyz/Plugin/Ninebot.lpx",
+      "filename": "Ninebot.lpx"
     },
     {
       "name": "NodeSeek & DeepFlood",

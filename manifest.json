@@ -1,8 +1,8 @@
 {
   "source": "https://loonlab.103516.xyz/Plugin/",
-  "last_updated": "2026-11-18 19:00",
-  "synced_at": "2026-11-19 01:34:26",
-  "count": 136,
+  "last_updated": "2026-11-20 00:37",
+  "synced_at": "2026-11-20 01:32:18",
+  "count": 137,
   "plugins": [
     {
       "name": "1.1.1.1 with WARP",
@@ -1938,6 +1938,27 @@
       "local_path": "plugins/Netisp-x.lpx",
       "bytes": 1836,
       "sha256": "2253af12df30075cb3a535c83a7026903dcba19007b5d70ce6014696d5ab17d2"
+    },
+    {
+      "name": "九号出行",
+      "desc": "九号出行每日签到。首次使用需进入「我的-签到中心」，手动签到一次以获取凭证。获取成功后，可关闭获取凭证脚本。",
+      "icon": "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Ninebot-03.png",
+      "date": "2026-11-20 00:00",
+      "tags": [
+        "功能增强"
+      ],
+      "authors": [
+        {
+          "name": "sooyaaabo",
+          "url": "https://github.com/sooyaaabo",
+          "avatar": "https://github.com/sooyaaabo.png"
+        }
+      ],
+      "url": "https://loon.103516.xyz/Plugin/Ninebot.lpx",
+      "filename": "Ninebot.lpx",
+      "local_path": "plugins/Ninebot.lpx",
+      "bytes": 1414,
+      "sha256": "f4909356b36cb5845ccb67c0aff963fcdec4382ae7e41b164a568f68f29ebd5d"
     },
     {
       "name": "NodeSeek & DeepFlood",
