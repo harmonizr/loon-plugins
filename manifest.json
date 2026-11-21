@@ -1,7 +1,7 @@
 {
   "source": "https://loonlab.103516.xyz/Plugin/",
-  "last_updated": "2026-11-20 00:37",
-  "synced_at": "2026-11-20 01:32:18",
+  "last_updated": "2026-11-20 20:28",
+  "synced_at": "2026-11-21 00:59:23",
   "count": 137,
   "plugins": [
     {
@@ -1957,8 +1957,8 @@
       "url": "https://loon.103516.xyz/Plugin/Ninebot.lpx",
       "filename": "Ninebot.lpx",
       "local_path": "plugins/Ninebot.lpx",
-      "bytes": 1414,
-      "sha256": "f4909356b36cb5845ccb67c0aff963fcdec4382ae7e41b164a568f68f29ebd5d"
+      "bytes": 1538,
+      "sha256": "496c70ef0cbfbf491734b14ba92a53355c1a2cd27c4161843d227497644e61d9"
     },
     {
       "name": "NodeSeek & DeepFlood",
