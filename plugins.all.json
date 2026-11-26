@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-22 23:05",
+  "last_updated": "2026-11-25 20:38",
   "plugins": [
     {
       "name": "1.1.1.1 with WARP",
@@ -1562,26 +1562,16 @@
       "name": "网易云音乐",
       "desc": "网易云音乐全面净化，可自定义界面样式。",
       "icon": "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/NeteaseMusic.png",
-      "date": "2026-11-02 21:00",
+      "date": "2026-11-25 20:00",
       "tags": [
         "去广告",
         "解锁会员"
       ],
       "authors": [
         {
-          "name": "RuCu6",
-          "url": "https://github.com/RuCu6",
-          "avatar": "https://github.com/RuCu6.png"
-        },
-        {
-          "name": "Keywos",
-          "url": "https://github.com/Keywos",
-          "avatar": "https://github.com/Keywos.png"
-        },
-        {
-          "name": "可莉🅥",
-          "url": "https://github.com/luestr/ProxyResource/blob/main/README.md",
-          "avatar": "https://github.com/luestr.png"
+          "name": "Yu9191",
+          "url": "https://github.com/Yu9191",
+          "avatar": "https://github.com/Yu9191.png"
         }
       ],
       "url": "https://loon.103516.xyz/Plugin/NeteaseMusic.lpx",
